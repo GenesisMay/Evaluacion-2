@@ -15,9 +15,11 @@ export const GreaterOrEqualScreen = () => {
     const num2 = Number(numero2);
 
     if (num1 > num2) {
-      setResultado(`MAYOR: ${num1}`);
+      setResultado(`${num1} MAYOR ${num2}`);
+
     } else if (num1 < num2) {
-      setResultado(`MAYOR: ${num2}`);
+      setResultado(`${num2} MAYOR ${num1}`);
+
     } else {
       setResultado('IGUALES');
     }
@@ -25,7 +27,7 @@ export const GreaterOrEqualScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Formulario</Text>
+      <Text style={styles.title}>Formulario </Text>
 
       <Text>Campo 1</Text>
       <InputComponent

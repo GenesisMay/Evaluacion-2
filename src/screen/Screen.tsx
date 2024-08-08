@@ -12,10 +12,10 @@ export const Screen = ({navigation}: Props) => {
         
     <View>
     <Button 
-        
         title='Imagen 1'
         onPress={()=>navigation.navigate('Image 1')}/>
     </View>
+    
     <Button 
         title='Imagen 2'
         onPress={()=>navigation.navigate('Image 2')}/>
