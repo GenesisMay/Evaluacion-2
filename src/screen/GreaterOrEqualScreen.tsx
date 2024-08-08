@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Text, View } from 'react-native'
-import { styles } from '../theme/appTheme'
-import { TextInput } from 'react-native-gesture-handler'
+import { styles } from '../theme/appTheme';
 import { InputComponent } from '../components/InPutComponent'
 import { ButtonComponent } from '../components/ButtonComponent';
 
@@ -15,20 +14,19 @@ export const GreaterOrEqualScreen = () => {
     const num1 = Number(numero1);
     const num2 = Number(numero2);
 
-    let valor = '';
     if (num1 > num2) {
-      valor= 'MAYOR';
-
-    } else if (num1 === num2) {
-      valor = 'IGUAL'
-    };
-
-    setResultado(valor);
+      setResultado(`MAYOR: ${num1}`);
+    } else if (num1 < num2) {
+      setResultado(`MAYOR: ${num2}`);
+    } else {
+      setResultado('IGUALES');
+    }
   };
 
   return (
     <View style={styles.container}>
-      <Text>Formulario</Text>
+      <Text style={styles.title}>Formulario</Text>
+
       <Text>Campo 1</Text>
       <InputComponent
       placeholder='Ingrese el número'
@@ -43,8 +41,13 @@ export const GreaterOrEqualScreen = () => {
       onChangeText={setNumero2}
       />
 
-      <ButtonComponent textButton='Iniciar' onPress={valor}/>
-
+      <ButtonComponent 
+      textButton='Iniciar' 
+      onPress={mayorIgual}/>
+      {resultado !== '' && (
+        <Text>Resultado: {resultado}</Text>
+      )
+      }
     </View>
   )
 }
