@@ -10,7 +10,7 @@ interface Props {
 export const ButtonComponent = ({ textButton, onPress }: Props) => {
     return (
         <TouchableOpacity
-        style={styles.button1}
+        style={styles.button}
             onPress={onPress}
         >
             <Text>{textButton}</Text>

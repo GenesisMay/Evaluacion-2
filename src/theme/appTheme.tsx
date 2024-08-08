@@ -17,6 +17,14 @@ title:{
     alignSelf:'center'
 },
 
+
+text:{
+    color:'blue',
+    fontWeight:'bold',
+    fontSize: 20,
+    marginBottom: 4,
+},
+
 image:{
     width: 320,
     height: 330,
@@ -30,28 +38,13 @@ button1:{
     alignSelf: 'center',
 },
 
-button2:{
-    width:150,
-    height:150,
-    borderRadius: 5,
-    alignSelf: 'center',
-
-},
-
-button3:{
-    width:150,
-    height:150,
-    borderRadius: 4,
-    
-    right:0
-},
-
-button4:{
-    width:150,
-    height:150,
-    borderRadius: 4,
-    
-    right:0
+button: {
+    width:100,
+    backgroundColor:'#CCCCCC',
+    paddingVertical: 15,
+    borderRadius: 10,
+    marginTop: 30,
+    alignSelf: 'center'
 },
 
 input: {
@@ -59,6 +52,6 @@ input: {
     margin: 20,
     borderWidth: 0.8,
     padding: 10,
-    marginBottom: 40,
+    marginBottom: 20,
 },
 })

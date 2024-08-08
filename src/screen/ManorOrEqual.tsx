@@ -26,16 +26,16 @@ export const ManorOrEqual = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Formulario</Text>
+      <Text style={styles.title}>Formulario Menor o Igual</Text>
 
-      <Text>Campo 1</Text>
+      <Text style={styles.text}>Campo 1</Text>
       <InputComponent
       placeholder='Ingrese el número'
       value={numero1}
       onChangeText={setNumero1}
       />
       
-      <Text>Campo 2</Text>
+      <Text style={styles.text}>Campo 2</Text>
       <InputComponent
       placeholder='Ingrese el número'
       value={numero2}
